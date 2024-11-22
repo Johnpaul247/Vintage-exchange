@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Vintage Exchange</title>
+</head>
+<body>
+  
+   <header>
+    <!-- NAVIGATION BAR FOR DESKTOP -->
+     <nav class="flex justify-between py-[20px] px-[110px] max-md:hidden">
+      <a class="font-bold text-2xl" href="/Index.html">VINTAGE</a>
+      <ul class="flex gap-6">
+        <li><a href="/Index.html">Home</a></li>
+        <li><a href="/About.html">About Us</a></li>
+        <li><a href="/Contact.html">Contact Us</a></li>
+        <li><select class="border border-gray-800 rounded-lg">
+          <option><a href="/Buy.html">Buy</a></option>
+          <option><a href="/Sell.html">Sell</a></option>
+          <option><a href="/Trade.html">Trade</a></option>
+        </select></li>
+      </ul>
+      <button class="border border-gray-400 rounded-lg p-2 font-semibold bg-gray-800 text-white">Get Started <i class="fa fa-user"></i></button>
+     </nav>
+
+    <!-- NAVIGATION BAR FOR MOBILE -->
+     <nav class="flex justify-between px-[10px] py-[20px] md:hidden">
+      <a class="font-bold text-2xl" href="/Index.html">VINTAGE</a>
+      <button onclick="toggleMenu()"><i class="fa fa-bars font-bold text-2xl"></i></button>
+     </nav>
+
+    <!-- SIDEBAR FOR MOBILE -->
+     <div id="menu" class="fixed bottom-0 left-0 h-[100vh] w-full px-4 transform translate-y-full transition-transform duration-300 md:hidden z-50 bg-gray-800 text-white">
+      <button onclick="toggleMenu()" class="absolute top-4 right-4 font-bold text-3xl text-white">&times;</button>
+      <ul class="flex flex-col mt-10 gap-4 text-xl">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li> 
+      </ul>
+     </div>
+
+     <!-- HERO SECTION -->
+      <main class="bg-gray-200 flex justify-between gap-8 md:mx-[110px] mb-[10px] rounded-xl p-8 relative max-md:flex-wrap">
+        <div class="flex flex-col gap-4 mt-16">
+          <h1 class="font-bold text-2xl text-center">WELCOME TO VINTAGE EXCHANGE</h1>
+          <p class="max-w-[500px] text-center">Your go-to Platform for buying, selling and trading timeless fashion. Level up your style with our summer collections.</p>
+          <div class="flex gap-4 justify-center">
+           <button class="border border-gray-400 p-2 rounded-lg bg-gray-800 text-white"><a href="/Buy.html">Shop Now</a></button>
+           <button class="border border-gray-400 p-2 rounded-lg bg-gray-800 text-white"><a href="/Sell.html">Sell your Vintage</a></button>
+           <button class="border border-gray-400 p-2 rounded-lg bg-gray-800 text-white"><a href="/Trade.html">Trade your vintage</a></button>
+          </div>
+        </div>
+
+        <div>
+          <img class="w-[500px] h-[400px] object-cover border-gray-500 border-[5px] rounded-tl-[80px]" src="/Img/IMG_2920.JPG" alt="">
+        </div>
+
+      </main>
+      
+   </header>
+
+   <!-- ABSOLUTE -->
+   <div class="flex gap-8 justify-center absolute bottom-[120px] left-60 bg-white p-2 shadow-lg rounded-lg max-md:hidden">
+    <div class="flex flex-col border border-gray-500 p-2 rounded-lg">
+      <i class="fa fa-info-circle text-center text-2xl"></i>
+      <p>Unique Styles</p>
+    </div>
+
+    <div class="flex flex-col border border-gray-500 p-2 rounded-lg">
+      <i class="fa fa-baby text-center text-2xl"></i>
+      <p>Sustainable Fashion</p>
+    </div>
+
+    <div class="flex flex-col border border-gray-500 p-2 rounded-lg">
+      <i class="fa fa-users text-2xl text-center"></i>
+      <p>Community-Driven</p>
+    </div>
+
+    <div class="flex flex-col border border-gray-500 p-2 rounded-lg">
+      <i class="fa fa-wrench text-2xl text-center"></i>
+      <p>Selfless Service</p>
+    </div>
+
+   </div>
+  
+<!-- CUSTOMER EXPERIENCE -->
+ <div class="md:px-[110px] max-md:px-4 py-[60px] md:mt-16">
+  <h1 class="text-center font-bold text-2xl">We Provide Best Customer Experience</h1>
+  <p class="text-center text-lg">We ensure our customers have the best shopping experience</p>
+
+  <div class="grid grid-cols-4 gap-4 mt-6 max-md:grid-cols-1">
+
+    <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+      <h1><i class="fa fa-check font-bold bg-gray-200 p-4 rounded-full text-center"></i></h1>
+      <h2 class="font-semibold text-xl">Original Products</h2>
+      <p>We provide money back guarantee if the product are not original.</p>
+    </div>
+
+    <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+      <h1><i class="fa fa-gift bg-gray-200 p-4 rounded-full text-center"></i></h1>
+      <h2 class="font-semibold text-xl">Satisfaction Guarantee</h2>
+      <p>Exchange the product you have purchased if it doesn't fit on you.</p>
+    </div>
+
+    <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+      <h1><i class="fa fa-clock bg-gray-200 p-4 rounded-full text-center"></i></h1>
+      <h2 class="font-semibold text-xl">New Arrival Everyday</h2>
+      <p>We updates our collections almost everyday</p>
+    </div>
+
+    <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+      <h1><i class="fa fa-plane bg-gray-200 p-4 rounded-full text-center"></i></h1>
+      <h2 class="font-semibold text-xl">Fast & Free Shipping</h2>
+      <p>We offer fast and free Shipping for our loyal customers</p>
+    </div>
+
+  </div>
+ </div>
+
+ <!-- BRANDS -->
+  <div class="md:px-[110px] max-md:px-4">
+    <h1 class="font-bold text-xl">BRANDS</h1>
+
+    <div class="flex justify-between mb-6 gap-4 max-md:flex-wrap">
+      <img class="w-[120px]" src="/Img/channel.png" alt="">
+      <img class="w-[120px]" src="/Img/vuitton.png" alt="">
+      <img class="w-[120px]" src="/Img/gucci.png" alt="">
+      <img class="w-[120px]" src="/Img/bal.png" alt="">
+      <img class="w-[120px]" src="/Img/burberry.png" alt="">
+      <img class="w-[100px] max-md:hidden" src="/Img/D&G.png" alt="">
+      <img class="w-[120px]" src="/Img/calvin.png" alt="">
+    </div>
+  </div>
+
+ 
+ <!-- TRENDING VINTAGE -->
+  <div class="md:px-[110px] max-md:px-4 pb-[60px] mt-16 ">
+    <h1 class="text-center font-bold text-2xl">Trending Vintage Finds</h1>
+    <p class="text-center">Discover the hottest vintage items currently available</p>
+
+    <div class="grid grid-cols-4 gap-6 mt-6 max-md:grid-cols-1">
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2908.JPG" alt="vintage">
+        <h1 class="font-semibold">Louis Vutton</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>600</del> 550</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2906.JPG" alt="vintage">
+        <h1 class="font-semibold">Burbery</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>200</del> 150</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2907.JPG" alt="vintage">
+        <h1 class="font-semibold">Channel</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>350</del> 300</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2910.JPG" alt="vintage">
+        <h1 class="font-semibold">Gucci</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>280</del> 220</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2917.JPG" alt="vintage">
+        <h1 class="font-semibold">Vintagee</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>400</del> 350</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2902.JPG" alt="vintage">
+        <h1 class="font-semibold">D&G Shirt</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>150</del> 120</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2912.JPG" alt="vintage">
+        <h1 class="font-semibold">White Shirt</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>600</del> 450</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+      <div class="flex flex-col gap-2 border border-gray-400 rounded-lg p-2">
+        <img class="rounded-lg" src="/Img/IMG_2920.JPG" alt="vintage">
+        <h1 class="font-semibold">Calvin Klein</h1>
+        <div class="flex justify-between">
+          <img class="w-[100px]" src="/Img/rating-45.png" alt="">
+          <h1>$<del>300</del> 250</h1>
+        </div>
+        <button class="p-2 bg-gray-800 rounded-lg text-white">Add to Cart <i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center mt-8">
+      <button class="bg-gray-800 p-2 rounded-lg text-white">View All Listings <i class="fa fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+<!-- LIMITED OFFER -->
+ <section class="md:px-[110px] max-md:px-4 pb-[60px]">
+
+  <div class="grid grid-cols-2 text-white max-md:grid-cols-1">
+    <div>
+      <img class="w-[100%] h-[400px] rounded-l-lg" src="/Img/IMG_2916.JPG" alt="">
+    </div>
+
+    <div class="bg-gray-800 h-[400px] w-[100%] p-16 flex flex-col gap-6 rounded-r-lg">
+      <p>LIMITED OFFER</p>
+      <h1 class="font-bold text-3xl">35% off only this friday and get special gift</h1>
+      <button class="bg-white text-gray-800 p-2 rounded-lg">Grab it now <i class="fa fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+
+<!-- TESTIMONIALS -->
+ <div class="my-16">
+  <h1 class="text-center font-bold text-2xl">Testimonials from our happy clients</h1>
+  <p class="text-center">Quotes from our satisfied users about their buying, selling, and trading experiences</p>
+
+  <div id="card-menu" class="grid grid-cols-3 gap-8 mt-6 max-md:grid-cols-1">
+  </div>
+
+  <div class="flex justify-center mt-8">
+    <button class="bg-gray-800 p-2 rounded-lg text-white">View All Comments <i class="fa fa-arrow-right"></i></button>
+  </div>
+ </div>
+
+
+ <!-- NEWSLETTER SECTION -->
+  <div class="text-center gap-6 ">
+    <h1 class="text-center font-bold text-3xl my-2"> Subscribe to our newsletter to get updates to our latest collections</h1>
+    <p class="text-center text-xl">Get 20% off on your first order just by subscribing to our newsletter</p>
+    <input class="p-2 border border-gray-800 border-[2px] text-gray-800 rounded-lg my-4" type="text" placeholder="Enter your Email">
+    <button class="p-[10px] bg-gray-800 text-white rounded-lg">Subscribe</button>
+    <p>You will be able to unsubscribe at anytime</p>
+    <p>Read our privacy policy <strong class="underline cursor-pointer">here</strong></p>
+  </div>
+ </section>
+
+  
+<!-- FOOTER -->
+ <footer class="bg-gray-200 md:px-[110px] max-md:px-16 py-16">
+
+  <div class="flex justify-between gap-4 max-md:flex-col">
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">VINTAGE EXCHANGE</h1>
+      <p class="max-w-[400px]">Specializes in producing high-quality, stylish products for your wardrobe.</p>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">SHOP</h1>
+      <a href="">All Collections</a>
+      <a href="">Winter Edition</a>
+      <a href="">Discount </a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">COMPANY</h1>
+      <a href="">About Us</a>
+      <a href="">Contacct</a>
+      <a href="">Affiliates </a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">SUPPORTS</h1>
+      <a href="">FAQs</a>
+      <a href="">Cookie Policy</a>
+      <a href="">Terms of Use </a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">PAYMENT METHODS</h1>
+      <div class="flex gap-2">
+        <img class="w-[50px]" src="/Img/mastercard.png" alt="">
+        <img class="w-[50px]" src="/Img/visa.png" alt="">
+        <img class="w-[70px]" src="/Img/paypal.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-16">
+    <h1> &copy; Copyright 2024, Vintage Exchange. All rights reserved.</h1>
+  </div>
+
+ </footer>
+
+
+
+   <script src="/Script.js"></script>
+</body>
+</html>

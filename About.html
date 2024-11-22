@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>ABOUT US</title>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR FOR DESKTOP -->
+  <nav class="flex justify-between py-[20px] px-[110px] max-md:hidden">
+    <a class="font-bold text-2xl" href="/Index.html">VINTAGE</a>
+    <ul class="flex gap-6">
+      <li><a href="/Index.html">Home</a></li>
+      <li><a href="/About.html">About Us</a></li>
+      <li><a href="/Contact.html">Contact Us</a></li>
+    </ul>
+    <button class="border border-gray-400 rounded-lg p-2 font-semibold bg-gray-800 text-white">Get Started <i class="fa fa-user"></i></button>
+   </nav>
+
+  <!-- NAVIGATION BAR FOR MOBILE -->
+   <nav class="flex justify-between px-[10px] py-[20px] md:hidden">
+    <a class="font-bold text-2xl" href="/Index.html">VINTAGE</a>
+    <button onclick="toggleMenu()"><i class="fa fa-bars font-bold text-2xl"></i></button>
+   </nav>
+
+  <!-- SIDEBAR FOR MOBILE -->
+   <div id="menu" class="fixed bottom-0 left-0 h-[100vh] w-full px-4 transform translate-y-full transition-transform duration-300 md:hidden z-50 bg-gray-800 text-white">
+    <button onclick="toggleMenu()" class="absolute top-4 right-4 font-bold text-3xl text-white">&times;</button>
+    <ul class="flex flex-col mt-10 gap-4 text-xl">
+      <li><a href="">Home</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us</a></li> 
+    </ul>
+   </div>
+  
+  <header class="md:px-[110px] py-16">
+
+    <div class="">
+      <h1 class="text-center text-5xl font-bold">ABOUT US </h1>
+    </div>
+
+  </header> 
+
+  <section class="md:px-[110px] md:py-16 max-md:px-4">
+
+    <div class="grid grid-cols-2 gap-8 py-8 relative max-md:grid-cols-1">
+      
+      <div class="flex flex-col gap-4 mt-8">
+        <h1 class="text-3xl font-bold">OUR STORY </h1>
+        <p class="max-w-[500px]">Vintage Exchange started as a simple draem, a dream to reconnect people with the beauty of timeless, authentic pieces. For as long as we can remember, we've been captivated by vintage items, each with it's own personality, histroy, and charm. We'd wander through flea markets, thrift stores, and estate sales, serching for treasures that had been forgotten  but still held so much value. We saw the beauty in things that others may have overlooked, and we wanted to share that experience with others.</p>
+
+        <button class="p-2 rounded-lg bg-gray-800 text-white max-w-[400px] ">Get Started</button>
+      </div>
+
+      <div class="relative">
+        <img class="w-[400px] rounded-tl-[40px] rounded-br-[40px]" src="/Img/vint.jpeg" alt="">
+        <img class="w-[200px] absolute bottom-80 right-10 rounded-lg max-md:hidden" src="Img/IMG_2907.JPG" alt="">
+      </div>
+    </div>
+
+    <img class="w-[200px] absolute top-[700px] left-[600px] rounded-lg max-md:hidden" src="Img/IMG_2906.JPG" alt="">
+
+  </section>
+
+
+  <!-- Our Mission -->
+   <div class="md:px-[110px] py-16 grid grid-cols-2 gap-16 max-md:px-4 max-md:grid-cols-1 max-md:hidden">
+
+    <div>
+      <img class="w-[400px] h-[400px] rounded-tl-[40px] rounded-br-[40px]" src="Img/IMG_2902.JPG" alt="">
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <h1 class="font-bold text-3xl">OUR MISSION</h1>
+      <p>Our mission is to make vintage shopping and trading accessible and enjoyable. We aim to create a space where people can buy, sell, and trade quality vintage items that have stood the test of time, providing a sustainable alternative to fast fashion.</p>
+      <button class="p-2 rounded-lg bg-gray-800 text-white max-w-[400px]">Get Started</button>
+    </div>
+
+   </div>
+
+
+   <div class="md:px-[110px] py-16 grid grid-cols-2 gap-16 max-md:px-4 max-md:grid-cols-1 md:hidden">
+
+    <div class="flex flex-col gap-4">
+      <h1 class="font-bold text-3xl">OUR MISSION</h1>
+      <p>Our mission is to make vintage shopping and trading accessible and enjoyable. We aim to create a space where people can buy, sell, and trade quality vintage items that have stood the test of time, providing a sustainable alternative to fast fashion.</p>
+      <button class="p-2 rounded-lg bg-gray-800 text-white max-w-[400px]">Get Started</button>
+    </div>
+
+    <div>
+      <img class="w-[400px] h-[400px] rounded-tl-[40px] rounded-br-[40px]" src="Img/IMG_2902.JPG" alt="">
+    </div>
+
+   </div>
+
+
+   <!-- WHAT WE OFFER -->
+    <section class="md:px-[110px] py-16 max-md:px-4">
+
+      <h1 class="font-bold text-center text-4xl">WHAT WE OFFER</h1>
+
+      <div class="grid grid-cols-3 gap-4 mt-8 max-md:grid-cols-1">
+
+        <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+          <h1 class="text-center bg-gray-800 p-4 w-fit rounded-full "><i class="fa fa-box-open text-center text-white text-2xl"></i></h1>
+          <h1 class="font-bold text-2xl">Curated Collections</h1>
+          <p>We meticulously select each item featured on our platform, ensuring that it meets our standards for authenticity, quality, and style. Our team of vintage experts searches for unique, high-quality pieces that embody the timeless appeal of vintage fashion and collectibles. Each item is chosen with care, so you can trust that every piece tells its own story and adds a distinctive touch to your collection.</p> 
+        </div>     
+        
+        <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+          <h1 class="text-center bg-gray-800 p-4 w-fit rounded-full "><i class="fa fa-shield-alt text-center text-white text-2xl"></i></h1>
+          <h1 class="font-bold text-2xl">Quality Assurance</h1>
+          <p>We understand that buying vintage online requires trust, which is why we are committed to quality. Every item is carefully inspected to ensure it’s in excellent condition and accurately represented. We strive to offer items that are as close to new as possible while still carrying the character and charm that vintage pieces are known for.</p> 
+        </div>  
+
+        <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+          <h1 class="text-center bg-gray-800 p-4 w-fit rounded-full "><i class="fa fa-certificate  text-center text-white text-2xl"></i></h1>
+          <h1 class="font-bold text-2xl">Authentic and Verified Items</h1>
+          <p>All items on Vintage Exchange are verified for authenticity. We specialize in items that are genuinely vintage, from classic apparel to timeless accessories, and we avoid replicas or imitations. Our mission is to offer only authentic pieces that have true value and meaning. We believe this commitment to authenticity sets us apart and builds confidence with every transaction.</p> 
+        </div>  
+
+        <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+          <h1 class="text-center bg-gray-800 p-4 w-fit rounded-full "><i class="fa fa-plane  text-center text-white text-2xl"></i></h1>
+          <h1 class="font-bold text-2xl">Sustainable Shopping</h1>
+          <p>Vintage Exchange is committed to promoting a sustainable lifestyle by offering an eco-friendly shopping alternative. By choosing pre-loved items, you’re supporting a circular economy, reducing waste, and making a positive environmental impact. Our platform gives you the chance to find beautiful, unique pieces without contributing to the demand for new production.</p> 
+        </div>  
+
+        <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+          <h1 class="text-center bg-gray-800 p-4 w-fit rounded-full "><i class="fa fa-store  text-center text-white text-2xl"></i></h1>
+          <h1 class="font-bold text-2xl">A Marketplace for Sellers and Buyers</h1>
+          <p>We know that some of the best vintage treasures are found in personal collections. That’s why Vintage Exchange also serves as a marketplace for sellers to share their pre-loved items with new owners. If you have vintage pieces that deserve a new home, our platform makes it easy to list, sell, and connect with buyers who share your appreciation for timeless style.</p> 
+        </div>  
+
+        <div class="flex flex-col gap-2 p-2 border border-gray-400 rounded-lg">
+          <h1 class="text-center bg-gray-800 p-4 w-fit rounded-full "><i class="fa fa-thumbs-up  text-center text-white text-2xl"></i></h1>
+          <h1 class="font-bold text-2xl">Customized Recommendations</h1>
+          <p>We want every visit to Vintage Exchange to feel personal. Our team is always on the lookout for items that align with current trends in vintage fashion, and we provide personalized recommendations based on your preferences. From rare finds to beloved classics, we aim to make it easy to discover pieces that resonate with your unique taste.</p> 
+        </div>  
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER SECTION -->
+  <div class="text-center gap-6 py-16">
+    <h1 class="text-center font-bold text-3xl my-2"> Subscribe to our newsletter to get updates to our latest collections</h1>
+    <p class="text-center text-xl">Get 20% off on your first order just by subscribing to our newsletter</p>
+    <input class="p-2 border border-gray-800 border-[2px] text-gray-800 rounded-lg my-4" type="text" placeholder="Enter your Email">
+    <button class="p-[10px] bg-gray-800 text-white rounded-lg">Subscribe</button>
+    <p>You will be able to unsubscribe at anytime</p>
+    <p>Read our privacy policy <strong class="underline cursor-pointer">here</strong></p>
+  </div>
+ 
+
+  
+<!-- FOOTER -->
+ <footer class="bg-gray-200 md:px-[110px] max-md:px-16 py-16">
+
+  <div class="flex justify-between gap-4 max-md:flex-col">
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">VINTAGE EXCHANGE</h1>
+      <p class="max-w-[400px]">Specializes in producing high-quality, stylish products for your wardrobe.</p>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">SHOP</h1>
+      <a href="">All Collections</a>
+      <a href="">Winter Edition</a>
+      <a href="">Discount </a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">COMPANY</h1>
+      <a href="">About Us</a>
+      <a href="">Contacct</a>
+      <a href="">Affiliates </a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">SUPPORTS</h1>
+      <a href="">FAQs</a>
+      <a href="">Cookie Policy</a>
+      <a href="">Terms of Use </a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="font-bold text-xl">PAYMENT METHODS</h1>
+      <div class="flex gap-2">
+        <img class="w-[50px]" src="/Img/mastercard.png" alt="">
+        <img class="w-[50px]" src="/Img/visa.png" alt="">
+        <img class="w-[70px]" src="/Img/paypal.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center mt-16">
+    <h1> &copy; Copyright 2024, Vintage Exchange. All rights reserved.</h1>
+  </div>
+
+ </footer>
+
+
+   <script src="Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>SELL YOUR VINTAGE</title>
+</head>
+<body>
+  <header>
+    <!-- NAVIGATION BAR FOR DESKTOP -->
+     <nav class="flex justify-between py-[20px] px-[110px] max-md:hidden">
+      <a class="font-bold text-2xl" href="/Index.html">VINTAGE</a>
+      <ul class="flex gap-6">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+      <button class="border border-gray-400 rounded-lg p-2 font-semibold bg-gray-800 text-white">Get Started</button>
+     </nav>
+
+    <!-- NAVIGATION BAR FOR MOBILE -->
+     <nav class="flex justify-between px-[10px] py-[20px] md:hidden">
+      <a class="font-bold text-2xl" href="/Index.html">VINTAGE</a>
+      <button onclick="toggleMenu()"><i class="fa fa-bars font-bold text-2xl"></i></button>
+     </nav>
+
+    <!-- SIDEBAR FOR MOBILE -->
+     <div id="menu" class="fixed bottom-0 left-0 h-[100vh] w-full px-4 transform translate-y-full transition-transform duration-300 md:hidden z-50 bg-gray-800 text-white">
+      <button onclick="toggleMenu()" class="absolute top-4 right-4 font-bold text-3xl text-white">&times;</button>
+      <ul class="flex flex-col mt-10 gap-4 text-xl">
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li> 
+      </ul>
+     </div>
+      
+   </header>
+  
+<!-- HERO SECTION -->
+ <main class="my-16">
+  <h1 class="text-center font-bold text-3xl">SELL YOUR VINTAGE CLOTHING</h1>
+  <p class="text-center text-xl">Turn your pre-loved pieces into cash. List your items for a community of vintage lovers</p>
+ </main>
+
+ <!-- STEPS TO SELL -->
+  <section class="md:px-[110px] max-md:px-4">
+    <h1 class="text-center font-bold text-2xl">PROCEDURES TO SELL</h1>
+
+    <div class="grid grid-cols-3 gap-6 mt-6 max-md:grid-cols-1">
+
+      <div class="flex flex-col gap-2 shadow-lg p-2">
+        <i class="fa-shield text-3xl"></i>
+        <h1 class="font-bold text-xl">1. Creat an account:</h1>
+        <p>Sign up to start listing your items.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 shadow-lg p-2">
+        <i class="fa-shield text-3xl"></i>
+        <h1 class="font-bold text-xl">2. List Your Items:</h1>
+        <p>Upload photos, set prices, and provide descriptions.</p>
+      </div>
+
+      <div class="flex flex-col gap-2 shadow-lg p-2">
+        <i class="fa-shield text-3xl"></i>
+        <h1 class="font-bold text-xl">3. Manage Your Listings:</h1>
+        <p>Track views and sales through your dashboard.</p>
+      </div>
+
+    </div>
+
+   <div class="text-center mt-8">
+    <h1>Ready to sell your vintage?</h1>
+    <button class="p-2 bg-gray-800 text-white rounded-lg">Sign up to get started</button>
+   </div>
+  </section>
+
+
+  <!-- NEWSLETTER SECTION -->
+<div class="text-center gap-6 py-16">
+  <h1 class="text-center font-bold text-3xl my-2"> Subscribe to our newsletter to get updates to our latest collections</h1>
+  <p class="text-center text-xl">Get 20% off on your first order just by subscribing to our newsletter</p>
+  <input class="p-2 border border-gray-800 border-[2px] text-gray-800 rounded-lg my-4" type="text" placeholder="Enter your Email">
+  <button class="p-[10px] bg-gray-800 text-white rounded-lg">Subscribe</button>
+  <p>You will be able to unsubscribe at anytime</p>
+  <p>Read our privacy policy <strong class="underline cursor-pointer">here</strong></p>
+</div>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-200 md:px-[110px] max-md:px-16 py-16 mt-16">
+
+    <div class="flex justify-between gap-4 max-md:flex-col">
+  
+      <div class="flex flex-col gap-2">
+        <h1 class="font-bold text-xl">VINTAGE EXCHANGE</h1>
+        <p class="max-w-[400px]">Specializes in producing high-quality, stylish products for your wardrobe.</p>
+      </div>
+  
+      <div class="flex flex-col gap-2">
+        <h1 class="font-bold text-xl">SHOP</h1>
+        <a href="">All Collections</a>
+        <a href="">Winter Edition</a>
+        <a href="">Discount </a>
+      </div>
+  
+      <div class="flex flex-col gap-2">
+        <h1 class="font-bold text-xl">COMPANY</h1>
+        <a href="">About Us</a>
+        <a href="">Contacct</a>
+        <a href="">Affiliates </a>
+      </div>
+  
+      <div class="flex flex-col gap-2">
+        <h1 class="font-bold text-xl">SUPPORTS</h1>
+        <a href="">FAQs</a>
+        <a href="">Cookie Policy</a>
+        <a href="">Terms of Use </a>
+      </div>
+  
+      <div class="flex flex-col gap-2">
+        <h1 class="font-bold text-xl">PAYMENT METHODS</h1>
+        <div class="flex gap-2">
+          <img class="w-[50px]" src="/Img/mastercard.png" alt="">
+          <img class="w-[50px]" src="/Img/visa.png" alt="">
+          <img class="w-[70px]" src="/Img/paypal.png" alt="">
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="text-center mt-16">
+      <h1> &copy; Copyright 2024, Vintage Exchange. All rights reserved.</h1>
+    </div>
+  
+   </footer>
+
+  <script src="/Script.js"></script>
+</body>
+</html>

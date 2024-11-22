@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>BUY TRENDING VINTAGE</title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header class="flex justify-between shadow items-center p-6 max-md:hidden">
+    <h1 class="font-bold text-2xl">VINTAGE</h1>
+    <input class="p-2 border border-gray-800 rounded-[40px] md:w-[500px]" type="search" placeholder="Search">
+    <div class="flex gap-4 relative">
+      <i class="fa fa-bell"></i>
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fa fa-user"></i>
+      <img class="w-[20px]" src="/Img/Mask-Group.png" alt="">
+    </div>
+  </header>
+
+  <!-- HEADER FOR MOBILE -->
+  <header class="flex justify-between shadow items-center p-6 md:hidden">
+    <button onclick="toggleMenu()"><i class="fa fa-bars font-bold text-2xl md:hidden"></i></button>
+    <h1 class="font-bold text-2xl">VINTAGE</h1>
+    <input class="p-2 border border-gray-800 rounded-[40px] md:w-[500px] max-md:hidden" type="search" placeholder="Search">
+    <div class="flex gap-4 relative">
+      <i class="fa fa-search md:hidden"></i>
+      <i class="fa fa-bell"></i>
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fa fa-user"></i>
+      <img class="w-[20px]" src="/Img/Mask-Group.png" alt="">
+    </div>
+  </header>
+
+  
+  <!-- BODY -->
+   <div class="flex justify-between gap-8">
+
+
+    <!-- SIDEBAR -->
+     <aside class="flex flex-col w-64 h-full shadow p-4 max-md:hidden">
+      <h1 class="font-bold text-2xl">Product Filters</h1>
+      <div class="my-4">
+        <h2 class="font-semibold text-xl">Category:</h2>
+        <p><input type="checkbox"> Men's Clothing</p>
+        <p><input type="checkbox"> Women's Clothing</p>
+        <p><input type="checkbox"> Accessories</p>
+        <p><input type="checkbox"> Jewelries</p>
+        <p><input type="checkbox"> Footwears</p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-xl">Availability:</h2>
+        <p><input type="checkbox"> In stock</p>
+        <p><input type="checkbox"> Out of stock</p>
+        <p><input type="checkbox"> Newly arrived</p>
+      </div>
+
+      <div class="my-4">
+        <h2 class="font-semibold text-xl">Price:</h2>
+        <p><input type="checkbox"> $50-100</p>
+        <p><input type="checkbox"> $100-200</p>
+        <p><input type="checkbox"> $200-300</p>
+        <p><input type="checkbox"> $300-400</p>
+        <p><input type="checkbox"> $400-500 etc</p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-xl">Quick links</h2>
+        <p><i class="fa fa-cog"></i> Settings</p>
+        <p><i class="fa fa-arrows-alt-h"></i> Sell</p>
+        <p><i class="fa fa-exchange-alt"></i> Trade</p>
+        <p><i class="fa fa-sign-out-alt"></i> Logout</p>
+      </div>
+     </aside>
+
+     <!-- SIDEBAR FOR MOBILE -->
+      <div id="sidebar-menu" class="fixed bottom-0 left-0 h-[100vh] w-full px-4 transform translate-y-full transition-transform duration-300 md:hidden z-50 bg-gray-800 text-white">
+        <button onclick="toggleMenu()" class="absolute top-4 right-4 font-bold text-3xl text-white">&times;</button>
+        <aside class="flex flex-col w-64 h-full shadow p-4 text-white">
+          <h1 class="font-bold text-2xl">Product Filters</h1>
+          <div class="my-4">
+            <h2 class="font-semibold text-xl">Category:</h2>
+            <p><input type="checkbox"> Men's Clothing</p>
+            <p><input type="checkbox"> Women's Clothing</p>
+            <p><input type="checkbox"> Accessories</p>
+            <p><input type="checkbox"> Jewelries</p>
+            <p><input type="checkbox"> Footwears</p>
+          </div>
+    
+          <div>
+            <h2 class="font-semibold text-xl">Availability:</h2>
+            <p><input type="checkbox"> In stock</p>
+            <p><input type="checkbox"> Out of stock</p>
+            <p><input type="checkbox"> Newly arrived</p>
+          </div>
+    
+          <div class="my-4">
+            <h2 class="font-semibold text-xl">Price:</h2>
+            <p><input type="checkbox"> $50-100</p>
+            <p><input type="checkbox"> $100-200</p>
+            <p><input type="checkbox"> $200-300</p>
+            <p><input type="checkbox"> $300-400</p>
+            <p><input type="checkbox"> $400-500 etc</p>
+          </div>
+    
+          <div>
+            <h2 class="font-semibold text-xl">Quick links</h2>
+            <p><i class="fa fa-cog"></i> Settings</p>
+            <p><i class="fa fa-arrows-alt-h"></i> Sell</p>
+            <p><i class="fa fa-exchange-alt"></i> Trade</p>
+            <p><i class="fa fa-sign-out-alt"></i> Logout</p>
+          </div>
+
+          
+         </aside>
+
+         <div class="text-center mt-32">
+          <h1> &copy; Copyright 2024, Vintage Exchange. All rights reserved.</h1>
+         </div>
+
+         
+      </div>
+
+
+
+     <!--  MAIN -->
+       <main class="p-4">
+        <div id="product-menu" class="grid grid-cols-4 gap-6 max-md:grid-cols-2">
+
+        </div>
+       </main>
+
+
+   </div>
+  
+
+
+   <script src="products.js"></script>
+</body>
+</html>
